@@ -16,6 +16,6 @@ namespace HDT_Twitch_Prediction
 
         internal static void OnLose() => ws.Send("lose");
 
-        internal static void OnTied() => ws.Send("tied");
+        internal static void OnTied() => ws.Send("cancel");
     }
 }
