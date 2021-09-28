@@ -35,7 +35,6 @@ namespace HDT_Twitch_Prediction
 		public void OnLoad()
 		{
 			WebSocketClient.Connect();
-			GameEvents.OnGameEnd.Add(WebSocketClient.OnStart);
 			GameEvents.OnGameStart.Add(WebSocketClient.OnStart);
 			GameEvents.OnGameWon.Add(WebSocketClient.OnWin);
 			GameEvents.OnGameLost.Add(WebSocketClient.OnLose);
